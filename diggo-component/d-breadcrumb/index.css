@@ -1,0 +1,37 @@
+.breadcrumb {
+	list-style-type: none;
+	margin-top: 20px;
+	display: flex;
+}
+
+.breadcrumb-item {
+	display: inline-flex;
+	font-family: GoogleSans;
+	color: #aaa;
+	font-size: 14px;
+	line-height: 14px;
+}
+
+.breadcrumb-slash {
+	margin: 0 0.4rem;
+	font-size: 16px;
+	line-height: 16px;
+}
+
+.breadcrumb-item a {
+	display: inline-block;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	max-width: 190px;
+	color: #aaa;
+}
+
+.breadcrumb-item a:hover {
+	color: #236ef5;
+	text-decoration: underline;
+}
+
+.breadcrumb-item:last-child a {
+	color: #236ef5;
+}

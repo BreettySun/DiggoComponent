@@ -1,0 +1,22 @@
+<nav aria-label="breadcrumb">
+  <ul class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+    <li class="breadcrumb-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+      <span class="breadcrumb-slash" style="margin: 0"></span>
+      <a itemprop="item" href="__ROOT__/">
+        <span itemprop="name">Home</span>
+      </a>
+      <meta itemprop="position" content="1" />
+    </li>
+
+    <volist name="bread_crumb" id="vo">
+      <li class="breadcrumb-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <span class="breadcrumb-slash">/</span>
+
+        <a itemprop="item" href="__ROOT__/{$vo['0']}/">
+          <span itemprop="name"> {$vo['1']} </span>
+        </a>
+        <meta itemprop="position" content="{$i+1}" />
+      </li>
+    </volist>
+  </ul>
+</nav>
