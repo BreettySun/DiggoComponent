@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+  <h1 style="margin-top: 20px;">入口文件</h1>
+
+  <script>
+    document.head.appendChild(
+      Object.assign(document.createElement("link"), {
+        rel: "stylesheet",
+        href: "./diggo-component-css/d-button.css",
+      })
+    );
+  </script>
+  <button class="d-button">按钮</button>
+
+  <script>
+    document.head.appendChild(
+      Object.assign(document.createElement("link"), {
+        rel: "stylesheet",
+        href: "./diggo-component-css/d-card.css",
+      })
+    );
+  </script>
+  <div class="d-card"></div>
+
+</body>
+
+</html>
